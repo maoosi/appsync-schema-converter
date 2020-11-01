@@ -2,7 +2,7 @@ const {
     parse,
     extendSchema,
     buildASTSchema
-} = require("graphql");
+} = require("graphql14");
 
 const {
     printSchema,
