@@ -1,6 +1,9 @@
 # AppSync Schema Converter
 
 > This project is a Fork from [gitlab.com/vicary/appsync-schema-converter](https://gitlab.com/vicary/appsync-schema-converter) and include the following list of modifications:
+>
+> - Added support for `cognito_groups` inside both `@aws_auth` and `@aws_cognito_user_pools` directives.
+> - Added support for `INPUT_FIELD_DEFINITION` directives.
 
 The sole purpose of this package is to convert modern GraphQL schemas into AppSync compatible version.
 
@@ -11,7 +14,7 @@ My team only works with Apollo, so expects more care on that front.
 
 *If AppSync updates their ancient GraphQL engine, I am more than happy to ditch this package.*
 
-# Serverless Framework
+## Serverless Framework
 
 This package also made with [`serverless-appsync-plugin`](https://www.npmjs.com/package/serverless-appsync-plugin) in mind, especially useful when [`merge-graphql-schemas`](https://www.npmjs.com/package/merge-graphql-schemas) was in your stack.
 
@@ -59,7 +62,8 @@ module.exports.compile = async _ => {
 };
 ```
 
-# Contributors
+## Contributors
 
 - Vicary Archangel (@vicary)
 - Andy Fu (@andyfu84)
+- Sylvain Simao (@maoosi)

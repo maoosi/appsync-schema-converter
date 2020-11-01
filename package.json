@@ -1,6 +1,6 @@
 {
-    "name": "appsync-schema-converter",
-    "version": "0.1.3",
+    "name": "@maoosi/appsync-schema-converter",
+    "version": "1.0.0",
     "description": "Converts modern schemas into AppSync compatible version.",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@gitlab.com/vicary/appsync-schema-converter.git"
+        "url": "git+ssh://git@github.com:maoosi/appsync-schema-converter.git"
     },
     "keywords": [
         "aws",
@@ -18,17 +18,17 @@
         "utilities",
         "directives"
     ],
-    "author": "Vicary Archangel <vicary.archangel@member.mensa.org>",
+    "author": "maoosi <hello@sylvainsimao.fr>",
     "license": "BSD-2-Clause",
     "bugs": {
-        "url": "https://gitlab.com/vicary/appsync-schema-converter/issues"
+        "url": "https://github.com/maoosi/appsync-schema-converter/issues"
     },
-    "homepage": "https://gitlab.com/vicary/appsync-schema-converter#readme",
+    "homepage": "https://github.com/maoosi/appsync-schema-converter#readme",
     "prettier": {
         "bracketSpacing": true,
         "semi": true,
         "printWidth": 120,
-        "tabWidth": 2,
+        "tabWidth": 4,
         "useTabs": false,
         "trailingComma": "all"
     },
