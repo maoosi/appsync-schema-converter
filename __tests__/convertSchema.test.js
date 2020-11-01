@@ -69,12 +69,12 @@ it("retains AppSync scalar in the resuling schema.", () => {
 
 it("retains AppSync authorization directives in the resulting schema.", () => {
     const schema = convertSchemas(
-        `type Query @aws_api_key @aws_iam @aws_oidc @aws_cognito_user_pools {
+        `type Query @aws_api_key @aws_iam @aws_oidc @aws_cognito_user_pools(cognito_groups: ["admins"]) @aws_auth(cognito_groups: ["admins"]) {
       foo: String
     }`, {
             includeDirectives: true
         },
     );
 
-    expect(/@aws_api_key @aws_iam @aws_oidc @aws_cognito_user_pools/.test(schema)).toBe(true);
+    expect(/@aws_api_key @aws_iam @aws_oidc @aws_cognito_user_pools\(cognito_groups: \["admins"\]\) @aws_auth\(cognito_groups: \["admins"\]\)/.test(schema)).toBe(true);
 });
