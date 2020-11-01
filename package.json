@@ -34,7 +34,8 @@
     },
     "devDependencies": {
         "@types/graphql": "^14.2.3",
-        "jest": "^24.9.0"
+        "graphql": "^14.0.0",
+        "jest": "^26.6.1"
     },
     "peerDependencies": {
         "graphql": "^14.0.0"
