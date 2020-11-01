@@ -1,0 +1,42 @@
+{
+  "name": "appsync-schema-converter",
+  "version": "0.1.3",
+  "description": "Converts modern schemas into AppSync compatible version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/vicary/appsync-schema-converter.git"
+  },
+  "keywords": [
+    "aws",
+    "appsync",
+    "graphql",
+    "schema",
+    "utilities",
+    "directives"
+  ],
+  "author": "Vicary Archangel <vicary.archangel@member.mensa.org>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://gitlab.com/vicary/appsync-schema-converter/issues"
+  },
+  "homepage": "https://gitlab.com/vicary/appsync-schema-converter#readme",
+  "prettier": {
+    "bracketSpacing": true,
+    "semi": true,
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.2.3",
+    "jest": "^24.9.0"
+  },
+  "peerDependencies": {
+    "graphql": "^14.0.0"
+  }
+}
